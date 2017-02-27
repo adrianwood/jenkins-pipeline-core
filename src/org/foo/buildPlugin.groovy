@@ -1,4 +1,6 @@
-def call(body) {
+package org.foo
+class example {
+    def call(body) {
     // evaluate the body block, and collect configuration into the object
     def config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
@@ -11,4 +13,5 @@ def call(body) {
         sh "mvn install"
         mail to: "...", subject: "${config.name} plugin build", body: "..."
     }
+}
 }
