@@ -1,5 +1,4 @@
-def call() {
-    name = human
+def call(String name = 'human') { 
     echo {$name}
     node {
         stage "Checking out"
