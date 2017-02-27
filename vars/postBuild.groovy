@@ -3,4 +3,4 @@ def call(String name = 'human') {
         stage "Deploying"
         echo "Now I'm deploying!"
 }
-
+}
