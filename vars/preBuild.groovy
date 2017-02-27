@@ -1,5 +1,5 @@
 def call() { 
-Bitbucket URL = "mygitrepo"    
+Bitbucket = "mygitrepo"    
 echo "${name}"
 	node {
         stage "Checking out"
