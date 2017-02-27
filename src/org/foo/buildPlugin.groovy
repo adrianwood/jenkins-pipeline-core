@@ -1,1 +1,1 @@
-echo 'test'
+$name="test"
