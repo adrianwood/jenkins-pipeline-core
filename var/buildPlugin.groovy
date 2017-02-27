@@ -1,1 +1,1 @@
-name="test"
+echo "hello"
