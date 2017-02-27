@@ -1,4 +1,6 @@
-def call(String name = 'human') {
+def call() {
+    String name = 'human'
+    echo {$name}
     node {
         stage "Checking out"
         echo "Hey, look, I'm echoing with a timestamp!"
