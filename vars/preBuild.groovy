@@ -1,5 +1,5 @@
 def call(String name = 'human') { 
-    echo ${name}
+    echo "${name}"
     node {
         stage "Checking out"
         echo "Hey, look, I'm echoing with a timestamp!"
