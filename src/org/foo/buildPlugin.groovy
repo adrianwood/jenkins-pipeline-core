@@ -1,15 +1,13 @@
-// vars/buildPlugin.groovy
-def call(body) {
-    // evaluate the body block, and collect configuration into the object
-    def config = [:]
-    body.resolveStrategy = Closure.DELEGATE_FIRST
-    body.delegate = config
-    body()
-
-    // now build, based on the configuration provided
-    node {
-        git url: "https://github.com/jenkinsci/${config.name}-plugin.git"
-        sh "mvn install"
-        mail to: "...", subject: "${config.name} plugin build", body: "..."
+// vars/acme.groovy
+class acme implements Serializable {
+    private String name
+    def setName(value) {
+        name = value
+    }
+    def getName() {
+        name
+    }
+    def caution(message) {
+        echo "Hello, ${name}! CAUTION: ${message}"
     }
 }
