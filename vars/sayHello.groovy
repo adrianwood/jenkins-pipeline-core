@@ -11,6 +11,10 @@ def call(String name = 'human') {
         // And a final echo to show the time when we wrap up.
         stage "Second echo"
         echo "Wonder what time it is now?"
+
+        // And a final echo to show the time when we wrap up.
+        stage "Third echo"
+        echo "Wonder what time it is now?"
 }
 }
 
