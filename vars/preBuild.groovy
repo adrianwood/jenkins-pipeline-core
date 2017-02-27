@@ -1,9 +1,9 @@
 def call() { 
-Bitbucket = "mygitrepo"    
-echo "${name}"
+bitbucket = "mygitrepo"    
+echo "${bitbucket}"
 	node {
         stage "Checking out"
-        echo "Hey, look, I'm echoing ${name} with a timestamp!"
+        echo "Hey, look, I'm echoing ${bitbucket} with a timestamp!"
 	git url: 'https://github.com/jfrogdev/project-examples.git'
 
         stage "Building"
