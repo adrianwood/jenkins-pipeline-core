@@ -1,3 +1,4 @@
+def call() { 
 bitbucket = "mygitrepo"    
 echo "${bitbucket}"
 	node {
@@ -8,4 +9,5 @@ echo "${bitbucket}"
         stage "Building"
         echo "Wonder what time it is now?"
 	}
+}
 
